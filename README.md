@@ -1,6 +1,6 @@
 # npmtest-passport-oauth2
 
-#### basic test coverage for  passport-oauth2 (v1.4.0)  [![npm package](https://img.shields.io/npm/v/npmtest-passport-oauth2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-passport-oauth2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-passport-oauth2.svg)](https://travis-ci.org/npmtest/node-npmtest-passport-oauth2)
+#### basic test coverage for  [passport-oauth2 (v1.4.0)](https://github.com/jaredhanson/passport-oauth2#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-passport-oauth2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-passport-oauth2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-passport-oauth2.svg)](https://travis-ci.org/npmtest/node-npmtest-passport-oauth2)
 
 #### OAuth 2.0 authentication strategy for Passport.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-passport-oauth2/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-passport-oauth2/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-passport-oauth2/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-passport-oauth2/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-passport-oauth2/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-passport-oauth2/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-passport-oauth2/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-passport-oauth2/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-passport-oauth2/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-passport-oauth2/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-passport-oauth2/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-passport-oauth2/build/coverage.html/index.html)
 
@@ -35,9 +35,36 @@
 ```json
 
 {
-    "name": "passport-oauth2",
-    "version": "1.4.0",
+    "author": {
+        "name": "Jared Hanson",
+        "url": "http://www.jaredhanson.net/"
+    },
+    "bugs": {
+        "url": "http://github.com/jaredhanson/passport-oauth2/issues"
+    },
+    "dependencies": {
+        "oauth": "0.9.x",
+        "passport-strategy": "1.x.x",
+        "uid2": "0.0.x",
+        "utils-merge": "1.x.x"
+    },
     "description": "OAuth 2.0 authentication strategy for Passport.",
+    "devDependencies": {
+        "chai": "2.x.x",
+        "chai-passport-strategy": "1.x.x",
+        "make-node": "0.3.x",
+        "mocha": "2.x.x"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "f62f81583cbe12609be7ce6f160b9395a27b86ad",
+        "tarball": "https://registry.npmjs.org/passport-oauth2/-/passport-oauth2-1.4.0.tgz"
+    },
+    "engines": {
+        "node": ">= 0.4.0"
+    },
+    "gitHead": "a02839afb8d15f7d283ae09167973e4d22e8faf8",
+    "homepage": "https://github.com/jaredhanson/passport-oauth2#readme",
     "keywords": [
         "passport",
         "auth",
@@ -48,17 +75,6 @@
         "oauth",
         "oauth2"
     ],
-    "author": {
-        "name": "Jared Hanson",
-        "url": "http://www.jaredhanson.net/"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/jaredhanson/passport-oauth2.git"
-    },
-    "bugs": {
-        "url": "http://github.com/jaredhanson/passport-oauth2/issues"
-    },
     "license": "MIT",
     "licenses": [
         {
@@ -67,24 +83,22 @@
         }
     ],
     "main": "./lib",
-    "dependencies": {
-        "oauth": "0.9.x",
-        "passport-strategy": "1.x.x",
-        "uid2": "0.0.x",
-        "utils-merge": "1.x.x"
-    },
-    "devDependencies": {
-        "make-node": "0.3.x",
-        "mocha": "2.x.x",
-        "chai": "2.x.x",
-        "chai-passport-strategy": "1.x.x"
-    },
-    "engines": {
-        "node": ">= 0.4.0"
+    "maintainers": [
+        {
+            "name": "jaredhanson"
+        }
+    ],
+    "name": "passport-oauth2",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jaredhanson/passport-oauth2.git"
     },
     "scripts": {
-        "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
-    }
+        "test": "mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+    },
+    "version": "1.4.0",
+    "bin": {}
 }
 ```
 
